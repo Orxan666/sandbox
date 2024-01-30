@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #header {
+    display: block;
+    position: relative;
+  }
+  #header .box {
+    align-items: center;
+  }
+  #header .box .logo {
+    width: 15%;
+  }
+  #header .box .menu {
+    width: 85%;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+  }
+  #header .box .menu li a {
+    text-decoration: none;
+    padding: 30px 15px;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  #header .box .menu li a i {
+    position: relative;
+    top: 3px;
+    margin-left: 4px;
+    color: #5eb9f0;
+  }
+  #header .box .menu li.contact a {
+    padding: 12px 25px;
+    border-radius: 8mm;
+    background-color: #5eb9f0;
+    color: white;
+    transform: translateY(0);
+    transition: 0.3s ease-in-out;
+  }
+  #header .box .menu li.contact a:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.431);
+  }
+  #header .box .menu li.home:hover .big-home-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+  #header .box .menu li.home .big-home-menu {
+    transform: translateY(25px);
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    border: 3px solid red;
+    transition: 0.5s;
+  }
+  #header .box .menu li.home .big-home-menu ul {
+    width: 25%;
+    text-align: center;
+  }
+  #header .box .menu li.home .big-home-menu ul li a {
+    padding: 20px;
+  }
+  #header .box .menu li.home .big-home-menu ul li a:hover {
+    color: #5eb9f0;
+  }
+  #header .box .menu li.home .big-home-menu .box-img {
+    width: 25%;
+  }
+  #header .box .menu li.home .big-home-menu .box-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #header .box .menu li.pages {
+    position: relative;
+  }
+  #header .box .menu li.pages:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  #header .box .menu li.pages ul {
+    position: absolute;
+    list-style: none;
+    background-color: rgb(189, 189, 189);
+    padding: 10px;
+    border-radius: 15px;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    transform: translateY(15px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  #header .box .menu li.pages ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header .box .menu li.pages ul li.services {
+    position: relative;
+  }
+  #header .box .menu li.pages ul li.services:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  #header .box .menu li.pages ul li.services ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-left: 20px;
+    opacity: 0;
+    transform: translateX(15px);
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+  }
+  #header .box .menu li.pages ul li a {
+    padding: 10px 13px;
+  }
+  #header .box .menu li.pages ul li i {
+    color: #5eb9f0;
+  }
+}
+#grow .container2 .box-left {
+  width: 100%;
+}
+#grow .container2 .box-right {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+#grow .container2 .box-right h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #343f52;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#grow .container2 .box-right h4 {
+  font-size: 20px;
+  width: 100%;
+  padding: 20px 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #343f52;
+  font-weight: 500;
+}
+#grow .container2 .box-right a {
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  padding: 15px 24px;
+  display: inline-block;
+  margin-top: 15px;
+  border-radius: 8mm;
+  transform: translateY(0);
+  transition: 0.3s ease-in-out;
+}
+#grow .container2 .box-right a:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.311);
+}
+
+#service {
+  padding: 4rem 0;
+  background-color: #f6eee5;
+}
+#service .container2 {
+  width: 95%;
+  margin: auto;
+}
+#service .container2 h5 {
+  color: grey;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+#service .container2 h1 {
+  color: #343f52;
+  font-size: 1rem;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#service .container2 .box {
+  border-radius: 15px;
+  margin-top: 10px;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+#service .container2 .box svg {
+  fill: palevioletred;
+  width: 40px;
+}
+#service .container2 .box h4 {
+  padding-top: 10px;
+  font-size: 25px;
+}
+#service .container2 .box p {
+  padding-top: 20px;
+  width: 95%;
+  margin: auto;
+}
+#service .container2 .box a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: red;
+  position: relative;
+}
+#service .container2 .box a.ferid {
+  color: pink;
+}
+#service .container2 .box a:hover::before {
+  width: 100%;
+  left: 0;
+}
+#service .container2 .box a::before {
+  content: "";
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  width: 0%;
+  height: 1.5px;
+  background-color: red;
+  bottom: -10px;
+  right: 0%;
+}
+
+@media (min-width: 768px) {
+  #grow {
+    padding: 4rem 0;
+    background-color: #fff8f0;
+    margin: auto;
+  }
+  #grow .container2 {
+    width: 95%;
+    margin: auto;
+  }
+  #grow .container2 .box-left {
+    width: 55%;
+  }
+  #grow .container2 .box-right {
+    width: 45%;
+    padding-left: 30px;
+  }
+  #grow .container2 .box-right h1 {
+    font-size: 2.5rem;
+    width: 70%;
+    font-weight: 800;
+    color: #343f52;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  #grow .container2 .box-right h4 {
+    font-size: 20px;
+    width: 65%;
+    padding: 20px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #343f52;
+  }
+  #grow .container2 .box-right a {
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    padding: 15px 24px;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 8mm;
+    transform: translateY(0);
+    transition: 0.3s ease-in-out;
+  }
+  #grow .container2 .box-right a:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.311);
+  }
+  #service {
+    padding: 4rem 0;
+    background-color: #f6eee5;
+  }
+  #service .container2 {
+    width: 95%;
+    margin: auto;
+  }
+  #service .container2 h5 {
+    color: grey;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+  #service .container2 h1 {
+    color: #343f52;
+    font-size: 3rem;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  #service .container2 .box {
+    border-radius: 15px;
+    margin: 10px;
+    background-color: white;
+    width: 23%;
+    padding: 70px 45px;
+    text-align: center;
+  }
+  #service .container2 .box svg {
+    fill: palevioletred;
+    width: 40px;
+  }
+  #service .container2 .box h4 {
+    padding-top: 10px;
+    font-size: 25px;
+  }
+  #service .container2 .box p {
+    padding-top: 20px;
+    width: 95%;
+    margin: auto;
+  }
+  #service .container2 .box a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: red;
+    position: relative;
+  }
+  #service .container2 .box a.ferid {
+    color: pink;
+  }
+  #service .container2 .box a:hover::before {
+    width: 100%;
+    left: 0;
+  }
+  #service .container2 .box a::before {
+    content: "";
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    width: 0%;
+    height: 1.5px;
+    background-color: red;
+    bottom: -10px;
+    right: 0%;
+  }
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
